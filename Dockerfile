@@ -8,8 +8,5 @@ ADD target/jobportal-0.0.1-SNAPSHOT.jar jobportal-0.0.1-SNAPSHOT.jar
 # Expose the application port
 EXPOSE 8080
 
-# Copy the .env file
-COPY .env .env
-
 # Run the application
 ENTRYPOINT ["java", "-jar", "/jobportal-0.0.1-SNAPSHOT.jar"]
